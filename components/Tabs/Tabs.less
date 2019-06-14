@@ -2,6 +2,8 @@
 .arrow {
   display: flex;
   justify-content: center;
+  align-items: center;
+  background: @lambda-red;
 
   &,
   button {
@@ -9,9 +11,25 @@
   }
 
   button {
-    height: 100%;
+    color: @lambda-red;
+    background: @white;
+    height: 90%;
     font-size: 24px;
     font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid @lambda-red;
+
+    &:hover {
+      color: @white;
+      box-shadow: 2px 2px 2px @white;
+      background: @lambda-light-red;
+      border: 1px solid @lambda-light-red;
+
+    }
+
+    &:active {
+      box-shadow: -2px -1px 1px @white;
+    }
   }
 }
 
@@ -48,6 +66,7 @@
   }
 
   .tabs-link {
+    border-radius: 5px;
     padding: 20px 25px;
     font-size: 24px;
     background-color: @lambda-red;
@@ -57,6 +76,7 @@
 
     &:hover {
       background-color: @lambda-light-red;
+      border-radius: 0px;
     }
   }
 
@@ -65,6 +85,7 @@
     border-right: 1px solid @lambda-red;
     background-color: @white;
     color: black;
+    border-radius: 0px;
 
     &:hover {
       background-color: @white;
