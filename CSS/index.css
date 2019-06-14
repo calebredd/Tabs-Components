@@ -44,6 +44,19 @@
 .dropdown .dropdown-hidden {
   display: none;
 }
+.arrow {
+  display: flex;
+  justify-content: center;
+}
+.arrow,
+.arrow button {
+  width: 75%;
+}
+.arrow button {
+  height: 100%;
+  font-size: 24px;
+  font-weight: bold;
+}
 .tabs {
   width: 100%;
 }
