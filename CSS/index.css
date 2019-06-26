@@ -44,6 +44,34 @@
 .dropdown .dropdown-hidden {
   display: none;
 }
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #931d25;
+}
+.arrow,
+.arrow button {
+  width: 75%;
+}
+.arrow button {
+  color: #931d25;
+  background: #ffffff;
+  height: 90%;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid #931d25;
+}
+.arrow button:hover {
+  color: #ffffff;
+  box-shadow: 2px 2px 2px #ffffff;
+  background: #be2530;
+  border: 1px solid #be2530;
+}
+.arrow button:active {
+  box-shadow: -2px -1px 1px #ffffff;
+}
 .tabs {
   width: 100%;
 }
@@ -71,6 +99,7 @@
   background-color: #931d25;
 }
 .tabs .tabs-link {
+  border-radius: 5px;
   padding: 20px 25px;
   font-size: 24px;
   background-color: #931d25;
@@ -80,12 +109,14 @@
 }
 .tabs .tabs-link:hover {
   background-color: #be2530;
+  border-radius: 0px;
 }
 .tabs .tabs-link-selected {
   z-index: 2;
   border-right: 1px solid #931d25;
   background-color: #ffffff;
   color: black;
+  border-radius: 0px;
 }
 .tabs .tabs-link-selected:hover {
   background-color: #ffffff;
